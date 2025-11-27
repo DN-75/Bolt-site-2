@@ -21,7 +21,7 @@ import pubgImage from "@/assets/pubg.jpg";
 import codmImage from "@/assets/codm.jpg";
 import mlbbImage from "@/assets/mlbb.jpg";
 // define Team type locally to avoid any
-type Team = { team_name: string; game: string };
+type Team = { team_name: string; game: string; logo_url?: string };
 const Index = () => {
   const [teams, setTeams] = useState<Team[]>([]);
   const [loadingTeams, setLoadingTeams] = useState(true);
@@ -153,7 +153,6 @@ const Index = () => {
   return <div className="min-h-screen">
       <GoogleSheetsTeams
         onTeamsLoaded={setTeams}
-        isLoading={loadingTeams}
         onLoadingChange={setLoadingTeams}
       />
       {/* Hero Section */}
@@ -188,7 +187,7 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="#register">
+              <a href="#register-form">
                 <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 glow-primary animate-glow w-full sm:w-auto">
                   Register Your Team
                 </Button>
@@ -262,8 +261,8 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <Card className="p-8 border-primary/20 hover:border-primary transition-all flex flex-col items-center justify-center text-center min-h-[280px]">
+          <div className="grid md:grid-cols-2 gap-8 mb-16 items-stretch">
+            <Card className="p-8 border-primary/20 hover:border-primary transition-all flex flex-col items-center justify-center text-center min-h-[280px] h-full">
               <Target className="w-16 h-16 text-primary mb-4 mx-auto" />
               <h2 className="text-2xl font-heading font-bold text-primary mb-4 text-center">Our Mission</h2>
               <p className="text-muted-foreground text-center">
@@ -272,7 +271,7 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="p-8 border-accent/20 hover:border-accent transition-all flex flex-col items-center justify-center text-center min-h-[280px]">
+            <Card className="p-8 border-accent/20 hover:border-accent transition-all flex flex-col items-center justify-center text-center min-h-[280px] h-full">
               <Trophy className="w-16 h-16 text-accent mb-4 mx-auto" />
               <h2 className="text-2xl font-heading font-bold text-accent mb-4 text-center">Our Vision</h2>
               <p className="text-muted-foreground text-center">
@@ -463,7 +462,7 @@ const Index = () => {
                                 <TeamCard
                                   teamName={team.team_name}
                                   game={game}
-                                  logoUrl={undefined}
+                                  logoUrl={team.logo_url}
                                 />
                               </CarouselItem>
                             ))}

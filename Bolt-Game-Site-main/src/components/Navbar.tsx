@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
@@ -16,8 +17,6 @@ const Navbar = () => {
     { name: "Rules", id: "rules" },
     { name: "Contact", id: "contact" },
   ];
-
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -83,7 +82,7 @@ const Navbar = () => {
                 {item.name}
               </button>
             ))}
-            <button onClick={() => scrollToSection("register")}>
+            <button onClick={() => scrollToSection("register-form")}>
               <Button variant="default" className="ml-2 glow-primary">
                 Register Now
               </Button>
@@ -115,7 +114,7 @@ const Navbar = () => {
                 {item.name}
               </button>
             ))}
-            <button onClick={() => scrollToSection("register")} className="w-full">
+            <button onClick={() => scrollToSection("register-form")} className="w-full">
               <Button variant="default" className="w-full mt-4">
                 Register Now
               </Button>

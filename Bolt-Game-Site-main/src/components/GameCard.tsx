@@ -9,7 +9,7 @@ interface GameCardProps {
 
 const GameCard = ({ title, image, description }: GameCardProps) => {
   return (
-    <Card className="group overflow-hidden bg-card border-primary/20 hover:border-primary transition-all duration-500 hover:glow-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
+    <Card className="group overflow-hidden bg-card border-primary/20 hover:border-primary transition-all duration-500 hover:glow-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 h-full flex flex-col">
       <div className="relative h-64 overflow-hidden">
         <img
           src={image}
@@ -23,13 +23,15 @@ const GameCard = ({ title, image, description }: GameCardProps) => {
           </h3>
         </div>
       </div>
-      <div className="p-6 space-y-4">
+      <div className="p-6 space-y-4 flex-1 flex flex-col">
         <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">{description}</p>
-        <a href="#games">
-          <Button variant="outline" className="w-full border-primary/50 hover:bg-primary hover:text-primary-foreground group-hover:border-primary transition-all duration-300">
-            View Details
-          </Button>
-        </a>
+        <div className="mt-auto">
+          <a href="#games">
+            <Button variant="outline" className="w-full border-primary/50 hover:bg-primary hover:text-primary-foreground group-hover:border-primary transition-all duration-300">
+              View Details
+            </Button>
+          </a>
+        </div>
       </div>
     </Card>
   );
