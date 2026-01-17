@@ -193,9 +193,9 @@ const Index = () => {
                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom duration-700 delay-200 px-4">
                     <div>
                         <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-primary mb-6">
-                            Tournament Begins In
+                            Registration closes in
                         </h2>
-                        <Countdown date={"25"}/>
+                        <Countdown date={"31"}/>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -347,7 +347,7 @@ const Index = () => {
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-heading font-bold text-primary mb-2">Registration Phase</h3>
-                                <p className="text-muted-foreground mb-2">December 21 - January 18, 2026</p>
+                                <p className="text-muted-foreground mb-2">December 21 - January 31, 2026</p>
                                 <p className="text-muted-foreground">Gear up. Sign up. Claim your spot in the
                                     showdown!</p>
                             </div>
@@ -659,14 +659,14 @@ const Index = () => {
                     <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8">
                         Don’t miss out. Register now.
                     </p>
-                    <Countdown date={"18"}/>
+                    <Countdown date={"31"}/>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
                     <Card className="p-6 border-primary/20 text-center">
                         <Calendar className="w-12 h-12 text-primary mx-auto mb-4"/>
                         <h3 className="text-lg font-heading font-bold text-primary mb-2">Deadline</h3>
-                        <p className="text-muted-foreground">January 18, 2025</p>
+                        <p className="text-muted-foreground">January 31, 2025</p>
                     </Card>
 
                     <Card className="p-6 border-accent/20 text-center">
