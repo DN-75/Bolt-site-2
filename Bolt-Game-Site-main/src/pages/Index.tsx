@@ -195,7 +195,7 @@ const Index = () => {
                         <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-primary mb-6">
                             Registration closes in
                         </h2>
-                        <Countdown date={"31"}/>
+                        <Countdown date={"29"}/>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -659,7 +659,7 @@ const Index = () => {
                     <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8">
                         Don’t miss out. Register now.
                     </p>
-                    <Countdown date={"31"}/>
+                    <Countdown date={"29"}/>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
