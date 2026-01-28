@@ -195,7 +195,7 @@ const Index = () => {
                         <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-primary mb-6">
                             Registration closes in
                         </h2>
-                        <Countdown date={"29"}/>
+                        <Countdown date={"30"}/>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -229,7 +229,7 @@ const Index = () => {
                     </div>
                     <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg p-6">
                         <Calendar className="w-12 h-12 text-accent mx-auto mb-3"/>
-                        <div className="text-3xl font-heading font-black text-accent">Feb 7</div>
+                        <div className="text-3xl font-heading font-black text-accent">Feb 1</div>
                         <div className="text-muted-foreground">2026</div>
                     </div>
                 </div>
@@ -360,7 +360,7 @@ const Index = () => {
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-heading font-bold text-gold mb-2">Tournament Day</h3>
-                                <p className="text-muted-foreground mb-2">February 7, 2026</p>
+                                <p className="text-muted-foreground mb-2">February 1, 2026</p>
                                 <p className="text-muted-foreground">One day of intense competition across all three
                                     games</p>
                             </div>
@@ -659,7 +659,7 @@ const Index = () => {
                     <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8">
                         Don’t miss out. Register now.
                     </p>
-                    <Countdown date={"29"}/>
+                    <Countdown date={"30"}/>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -678,7 +678,7 @@ const Index = () => {
                     <Card className="p-6 border-gold/20 text-center">
                         <DollarSign className="w-12 h-12 text-gold mx-auto mb-4"/>
                         <h3 className="text-lg font-heading font-bold text-gold mb-2">Entry Fee</h3>
-                        <p className="text-muted-foreground">Per Team 1500LKR</p>
+                        <p className="text-muted-foreground">Per Team 500LKR</p>
                     </Card>
                 </div>
 
