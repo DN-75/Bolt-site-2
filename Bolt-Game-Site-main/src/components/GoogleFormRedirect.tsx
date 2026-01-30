@@ -10,8 +10,9 @@ const GoogleFormRedirect = () => {
   return (
     <Button
       size="lg"
-      className="glow-primary animate-glow px-[10px] py-[20px] my-0 mx-auto text-base font-bold text-center hover:scale-105"
+      className="cursor-not-allowed glow-primary animate-glow px-[10px] py-[20px] my-0 mx-auto text-base font-bold text-center hover:scale-105"
       onClick={handleOpenForm}
+      disabled={true}
     >
       Open Registration Form
     </Button>

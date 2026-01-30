@@ -192,16 +192,16 @@ const Index = () => {
 
                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom duration-700 delay-200 px-4">
                     <div>
-                        <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-primary mb-6">
-                            Registration closes in
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-red-600 mb-6">
+                            Registration closed
                         </h2>
                         <Countdown date={"30"}/>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <a href="#register-form">
-                            <Button size="lg"
-                                    className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 glow-primary animate-glow w-full sm:w-auto">
+                        <a href="#">
+                            <Button size="lg" disabled={true}
+                                    className=" text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 glow-primary animate-glow w-full sm:w-auto cursor-not-allowed">
                                 Register Your Team
                             </Button>
                         </a>
@@ -656,8 +656,8 @@ const Index = () => {
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-black text-gradient-primary mb-6">
                         REGISTER NOW
                     </h1>
-                    <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8">
-                        Don’t miss out. Register now.
+                    <p className="text-2xl sm:text-3xl md:text-4xl text-red-600 mb-8 font-bold">
+                        Registration closed
                     </p>
                     <Countdown date={"30"}/>
                 </div>

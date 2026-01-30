@@ -82,8 +82,8 @@ const Navbar = () => {
                 {item.name}
               </button>
             ))}
-            <button onClick={() => scrollToSection("register-form")}>
-              <Button variant="default" className="ml-2 glow-primary hover:scale-105">
+            <button onClick={() => scrollToSection("register-form")} disabled={true}>
+              <Button variant="default" className="ml-2 glow-primary hover:scale-105 cursor-not-allowed">
                 Register Now
               </Button>
             </button>
